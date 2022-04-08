@@ -1,4 +1,4 @@
-# The Reciepe Closet
+# The Recipe Closet
 
 ## Wireframe:
 ![PXL_20220408_082555236](https://user-images.githubusercontent.com/43531474/162398215-06011ebe-4a96-4c3f-bc92-b50242c4e39b.jpg)
