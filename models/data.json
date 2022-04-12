@@ -1,0 +1,127 @@
+[
+    {
+        "name": "Chocolate Cake",
+        "ingredients": ["butter", "sugar", " flour", "eggs", "salt", "chocolate", "milk", "baking soda"],
+        "directions":[ "Preheat oven to 350 degrees F (175 degrees C). Grease and flour a 9x13 inch pan. Sift together the flour, sugar, baking soda, baking powder, cocoa and salt. Set aside.",
+        "Melt the shortening in the boiling water, then stir into the flour mixture until blended. Beat in the eggs, then stir in the vanilla.",
+        "Pour batter into prepared pan. Bake in the preheated oven for 30 minutes, or until a toothpick inserted into the center of the cake comes out clean. Allow to cool."],
+        "prepTime": 10,
+        "cookTime": 30,
+        "id": 1
+    },
+    {
+        "name": "Carrot Cake",
+        "ingredients": ["butter", "sugar", "flour", "eggs", "salt", "sugar", "carrots", "milk", "baking soda", "cinnamon"],
+        "directions":[ "Preheat oven to 350 degrees F (175 degrees C).Lightly grease and flour one 9x13 inch pan or two 9 inch round cake pans",
+        "Separate eggs and beat egg whites until frothy, then continue whipping and gradually add 1/2 cup of the white sugar. Beat until stiff.",
+        "In a large bowl combine; the cake flour, wheat flour, brown sugar, baking powder, baking soda, and cinnamon, mix until blended. Add the oil and the buttermilk and mix well. Add the egg yolks and mix well. Fold in the egg whites and then the carrots. Pour batter into prepared pan.",
+        "Bake at 350 degrees F (175 degrees C) for 25 to 35 minutes. Cool and frost with your favorite Cream Cheese frosting using light cream cheese."],
+        "prepTime": 15,
+        "cookTime": 35,
+        "id": 2
+    },
+    {
+        "name": "Chicken Wontons",
+        "ingredients": ["chicken", "soy sauce", "flour", "green onion", "seasame oil", "vegetable oil", "egg", "wonton wrappers", "salt"],
+        "directions":[ "Mix chicken, egg, green onion, soy sauce, sesame oil, vegetable oil, and salt in a large bowl until evenly combined.",
+        "Scoop about 1 teaspoon chicken mixture and place into the center of a wonton wrapper. Moisten 2 adjacent edges of the wrapper with water and fold into a triangle. Connect the two lower points of the wrapper and moisten to seal and make a hat shape. Repeat with remaining chicken and wonton wrappers.",
+        "Bring a large pot of water to boil. Stir wontons into boiling water. Add 1/2 cup cold water and allow water to return to a boil. Repeat boiling with another 1/2 cup cold water. Wontons are ready when chicken is no longer pink in the center, about 5 minutes. Drain."],
+        "prepTime": 50,
+        "cookTime": 10,
+        "id": 3
+    },
+    {
+        "name": "Brenda's Lasagna",
+        "ingredients": ["lasagna noodles", "ground beef", "garlic", "eggs", "salt", "mozzarella cheese", "ricotta cheese", "cheddar cheese", "pepper"],
+        "directions":[ "Bring a large pot of lightly salted water to a boil. Add pasta and cook for 8 to 10 minutes or until al dente; drain.",
+        "Preheat oven to 350 degrees F (175 degrees C). In a large skillet over medium-high heat, brown beef and season with salt and pepper; drain. Stir in spaghetti sauce and garlic and simmer 5 minutes.",
+        "In a medium bowl, combine mozzarella, Cheddar and ricotta; stir well. In 9x13 inch pan, alternate layers of noodles, meat mixture and cheese mixture until pan is filled."],
+        "prepTime": 30,
+        "cookTime": 30,
+        "id": 4
+    },
+    {
+        "name": "Banana Pie",
+        "ingredients": ["butter", "sugar", "flour", "eggs", "salt", "sugar", "bananas", "milk", "baking soda"],
+        "directions":[ "In a medium bowl, mix graham cracker crumbs and sugar. Stir in melted butter. Mix thoroughly, then press mixture into bottom of a 9x13 inch pan.",
+        "Cut bananas into 1/4 inch slices and make a single layer of banana slices on graham cracker crust. Reserve remaining banana slices.",
+        "In a large mixing bowl, whip cream cheese until fluffy. Add pudding mix and whip mixture until smooth. Add milk and mix until all ingredients are thoroughly combined. Pour mixture over layer of bananas.",
+        "Make another layer of banana slices on top of pudding layer. Cover bananas with whipped topping. Refrigerate at least 3 hours before serving. If using banana slices for garnish, toss with lemon juice to prevent browning."],
+        "prepTime": 10,
+        "cookTime": 90,
+        "id": 5
+    },
+    {
+        "name": "Twisty Cookies",
+        "ingredients": ["butter", "sugar", "flour", "eggs", "salt", "sugar", "chocolate", "milk", "baking soda"],
+        "directions":[ "Preheat oven to 375 degrees F (190 degrees C).Lightly grease cookie sheets.",
+        "Combine white and brown sugar, butter and eggs. Stir in flour, baking soda and salt. The dough will be stiff.",
+        "Stir in nuts, chocolate chips, rum and whiskey. Drop dough by tablespoonful onto cookie sheet. Bake 8 to 10 minutes."],
+        "prepTime": 20,
+        "cookTime": 10,
+        "id": 6
+    },
+    {
+        "name": "Shrimp Scampi with Pasta",
+        "ingredients": ["butter", "olive oil", "flour", "eggs", "salt", "white wine", "shallots", "garlic", "parsely", "lemon juice", "pasta"],
+        "directions":[ "Have all of your ingredients prepared and ready to cook before heating your skillet. You don't want to have to pause to cut, chop, squeeze, or measure right in the middle of a fast-moving recipe. If you use fresh shrimp, you can peel and devein the shrimp earlier in the day, then keep it chilled in the refrigerator until you're ready to get cooking.",
+        "Boil the pasta in well-salted water, drain, and hold aside before cooking the shrimp scampi. You'll add the pasta to the hot skillet to warm it before serving. Time your cooking so you're ready to start cooking the shrimp immediately after the pasta is drained; you don't want the pasta to sit for too long.",
+        "It takes just a couple of minutes to cook raw shrimp, and if they cook for too long, shrimp turn tough and rubbery. You'll know the shrimp are close to done when they start to curl into a C shape and turn from translucent gray to opaque pink and white."],
+        "prepTime": 20,
+        "cookTime": 20,
+        "id": 7
+    },
+    {
+        "name": "Greek Pasta Salad",
+        "ingredients": ["butter", "olive oil", "vinegar", "eggs", "salt", "tomatoes", "oregano", "garlic", "bell peppers", "cucumbers", "pasta", "feta chhese"],
+        "directions":[ "Fill a large pot with lightly salted water and bring to a rolling boil over high heat. Once the water is boiling, stir in the penne, and return to a boil. Cook the pasta uncovered, stirring occasionally, until the pasta has cooked through, but is still firm to the bite, about 11 minutes. Rinse with cold water and drain well in a colander set in the sink.",
+        "Whisk together the vinegar, lemon juice, garlic, oregano, salt, pepper, and olive oil. Set aside. Combine pasta, tomatoes, onion, green and red peppers, cucumber, olives, and feta cheese in a large bowl. Pour vinaigrette over the pasta and mix together. Cover and chill for 3 hours before serving."],
+        "prepTime": 20,
+        "cookTime": 10,
+        "id": 8
+    },
+    {
+        "name": "Korean fried chicken",
+        "ingredients": ["chicken", "sugar", "flour", "eggs", "black pepper", "oil", "salt", "corn starch", "cold water"],
+        "directions":[ "Stir chicken, onion, garlic, fine salt, and 1/2 teaspoon black pepper together in a bowl until chicken is coated. Cover the bowl with plastic wrap and refrigerate, 4 hours to overnight.",
+        "Heat oil in a deep-fryer or large saucepan to 340 degrees F (171 degrees C).",
+        "Whisk cornstarch, flour, sugar, 1/2 teaspoon black pepper, and 1/4 teaspoon salt together in a large bowl. Gradually whisk ice water into flour in until mixture resembles a smooth pancake batter. Transfer chicken to batter and stir to coat chicken completely.",
+        "Working in batches, cook chicken in preheated oil for 4 minutes. Transfer cooked chicken to a cooling rack.",
+        "Increase oil temperature in the deep-fryer or large saucepan to 375 degrees F (190 degrees C).",
+        "Working in batches, cook chicken again in hot oil until golden brown and crispy on the outside, 3 to 4 minutes. Transfer to a wire rack to drain."],
+        "prepTime": 15,
+        "cookTime": 10,
+        "id": 9
+    },
+    {
+        "name": "Kicked Up Mac and Cheese",
+        "ingredients": ["butter", "mustard", "flour", "eggs", "salt", "milk", "pasta", "hot pepper", "cheddar cheese", "bread crumbs"],
+        "directions":[ "Preheat oven to 375 degrees F (190 degrees C). Bring a large pot of lightly salted water to a boil. Add pasta and cook for 8 to 10 minutes or until al dente; drain.",
+        "In a large saucepan over medium heat, melt 2 tablespoons butter. Whisk in flour and cook, stirring, 1 minute. A little at a time, whisk in milk, mustard, salt, pepper and hot sauce. Bring to a gentle boil, stirring constantly. Boil 1 minute, then remove from heat and whisk in pepperjack, Cheddar and Parmesan until smooth. Stir in cooked pasta and pour into shallow 2 quart baking dish.",
+        "Melt remaining 2 tablespoons butter. Stir in bread crumbs and chili powder. Sprinkle over macaroni mixture. Bake in preheated oven 30 minutes. Let stand 10 minutes before serving."],
+        "prepTime": 40,
+        "cookTime": 30,
+        "id": 10
+    },
+    {
+        "name": "Cornbread Pancakes with Fresh Strawberry Syrup",
+        "ingredients": ["butter", "sugar", "flour", "eggs", "salt", "syrup", "strawberries", "milk", "baking soda", "sour cream"],
+        "directions":[ "Place strawberries in a saucepan over medium-high heat. Stir in sugar, water, and lemon juice and bring to a simmer. Lower heat to medium and cook, stirring occasionally, until strawberries are very soft, and the syrup starts to thicken, 15 to 20 minutes.",
+        "Remove from the stove and carefully pass through a mesh sieve into a bowl. Discard any seeds and fibrous bits that are left in the sieve. Let syrup cool for 15 minutes, then cover and store in the refrigerator until needed. Whisk together flour, sugar, baking powder, baking soda, and salt in a bowl until all ingredients are well incorporated; set aside. Whisk eggs into the cooled cornmeal mixture until incorporated. Add the reserved flour mixture and stir with a spatula until well combined and no flour remains in the saucepan; batter will be thick but still scoopable.",
+        "Place buttermilk, cornmeal, and 2 tablespoons butter in a saucepan over medium heat. Stir with a whisk until butter melts and mixture starts to simmer. Once simmering, cook and stir until very thick, about 2 minutes. Remove from the heat and cool for 10 minutes.",
+        "Melt 1 tablespoon butter in a skillet over medium heat. Working in batches, scoop 1/3 cup batter for each pancake into the hot skillet and press them down with the back of a spatula to flatten out. Cook until the outside edges start to look a little dry, about 3 to 4 minutes. Flip and repeat on the other side until pancakes are cooked through, another 3 to 4 minutes. Repeat to cook remaining pancakes, adding more butter to the skillet as necessary. Top warm pancakes with strawberry syrup."],
+        "prepTime": 25,
+        "cookTime": 45,
+        "id": 11
+    },
+    {
+        "name": "Pasta with Peas and Sausage",
+        "ingredients": ["butter", "olive oil", "garlic", "sausage", "salt", "heavy cream", "green peas", "parmasean cheese", "pasta"],
+        "directions":[ "Bring a large pot of lightly salted water to a boil. Add pasta and cook for 8 to 10 minutes or until al dente; drain.",
+       "In a skillet heat oil and saute garlic over medium heat. Brown sausage in skillet. Once brown add frozen peas and simmer for 5 minutes. Slowly add heavy cream and butter to skillet; bring to a slight boil. Add more cream if necessary. Cook for 5 minutes. Toss with cooked pasta and top with Parmesan cheese."],
+        "prepTime": 15,
+        "cookTime": 10,
+        "id": 12
+    }
+
+]

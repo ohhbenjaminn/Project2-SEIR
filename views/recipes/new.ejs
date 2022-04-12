@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Create a new recipe</h2>
+
+    <form action="/recipes/new" method="POST" id="add"  autocomplete="off">
+
+        <label for="recipeName">Recipe Name:</label><br>
+        <input type="text" id="recipeName" name="recipeName" value=""><br>
+
+        <label for="prepTime">Prep Time:</label><br>
+        <input type="number" id="prepTime" name="prepTime" value=""><br><br>
+
+        <label for="cookTime">Cook Time:</label><br>
+        <input type="number" id="cookTime" name="cookTime" value= ""><br><br>
+
+        <label for="ingredients">Ingredients:</label><br>
+        <input type="text" id="ingredients" name="ingredients" value=""><br><br>
+
+        <label for="directions">Directions:</label><br>
+        <input type="text" id="directions" name="directions" value=""><br><br>
+
+        <input type="button" class="button_active" onclick="location.href=':id';" value="sumbit"/>
+
+    </form>
+
+</body>
+</html>

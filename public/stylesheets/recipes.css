@@ -1,0 +1,55 @@
+.prep {
+    
+
+}
+
+h2 {
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+.boxed {
+    display: flex;
+    box-shadow: 0 10px 10px -5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 50%;
+    font-size: 20px;
+    background-color: #eeeeee;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ingredients, .directions{
+    font-size: 20px;
+}
+
+.directions-text, .ingredients-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* div {
+    position: relative;
+    background: $white;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 30px 2px #000;
+    .header {
+       background: $food;
+       background-size: cover;
+       min-height: 350px;
+          .icon a .fa-heart-o {
+          position: absolute;
+          left: 85%;
+          bottom: 30.7%;
+          background: $heart;
+          color: $white;
+          font-size: 1.3em;
+          font-weight: bold;
+          padding: 15px;
+          border-radius: 50%;
+          box-shadow: 0px 5px 30px 1px $heart;
+       }
+     */

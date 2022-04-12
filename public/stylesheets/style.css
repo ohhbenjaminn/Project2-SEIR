@@ -18,3 +18,21 @@
 .collection-item form {
   margin-top: -5px;
 }
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+}
+
+.login img {
+  height: 30px;
+}
+
+
+/* body {
+   background-image: url(https://thumbs.dreamstime.com/z/tacos-tile-mexican-food-delicious-taco-texture-154290597.jpg); 
+  background-color: rgb(243, 243, 243);
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://thumbs.dreamstime.com/z/tacos-tile-mexican-food-delicious-taco-texture-154290597.jpg");
+}  */

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/recipes.css">
+</head>
+<body>
+    <div>
+        <% recipes.forEach(function(r){ %>
+            <div>
+                <h2 style="text-align:center"><%= r.name %></h2>
+
+                 <div class="boxed">
+                    <p ><b>Prep Time:</b> <%= r.prepTime %> <b>|</b>  <b>Cook Time:<%= r.cookTime %></p> 
+                </div>
+
+                
+                
+                <h3 class="ingredients">Ingredients:</h3>
+                <p class="ingredients-text"> <%= r.ingredients %></p>
+                <h3 class="directions">Directions:</h3>
+                <p class="directions-text"><%= r.directions %></p>
+                
+               
+                <!-- <p>Comments: <%= r.comments %></p> -->
+                
+                
+            </div>                   
+       <% }); %> 
+    </div>
+</body>
+</html>
