@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/individual.css">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <%- include('../navbar') %> 
+    <br>
+    <img class="pic" src="https://i.pinimg.com/originals/51/ee/ab/51eeab1898363e943dfb31e525d9ffc7.png"  alt="restaurant">
+<!-- width="1280" height="600" -->
+    <div>
+        <% recipe.map(function(item){  %>
+            
+            <div class="itemName"><b><%= item.name %> </b></div>
+            <br>
+
+            <div class="boxed">
+                <div class="prepTime"><b>Prep Time:</b> <%= item.prepTime %> <div>
+                
+                <div class="cookTime"><b>Cook Time:</b> <%= item.cookTime %> <div>
+            </div>
+
+            
+            <br>
+            <h3 class="ingredients"><b>Ingredients:</b></h3>
+            <div class="ingredients2"><%= item.ingredients %> </div>
+            <br>
+            <h3 class="directions"><b>Directions:</b></h3>
+            <div class="directions2"><%= item.directions %> </div>
+
+            
+            <% if (user) { %>
+             <form action="/recipes/<%= item._id%>" method="post" class="add-comment">
+
+                <div>
+                    <label>Rating:</label>
+                    <select name="rating" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <textarea name="comment" id="comment" placeholder="Enter comment"></textarea>
+                </div>
+
+                <input type="submit" value="Submit">
+                
+            </form>
+            <br><br>
+            <% } %>
+        <% }) %>                    
+    </div>
+
+<div>
+     <% recipe.map(function(item){ %>  
+        <div class="'postcomments">
+            <% item.comments.map((i) => {%>
+                <div><%= i.name %> </div>
+                <%= i.date %> 
+                <div><%= i.comment %> </div>
+                
+            <%  }) %>
+        </div>      
+    
+    <% }) %> 
+</div>    
+
+</body>
+</html>

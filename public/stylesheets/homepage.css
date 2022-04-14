@@ -1,0 +1,72 @@
+.brand-logo {
+    margin-left: 15px;
+  }
+  
+  .card .card-content .card-title {
+    margin-bottom: 10px;
+  }
+  
+  #search-row form {
+    padding-top: 20px;
+  }
+  
+  .student-name {
+    position: relative;
+    top: -5px;
+  }
+  
+  .collection-item form {
+    margin-top: -5px;
+  }
+  
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+  }
+  
+  .login img {
+    height: 30px;
+  }
+  
+  body{
+    background-image: url("https://www.humphreymunson.co.uk/wp-content/uploads/2019/12/Luxury-Walk-In-Pantry-Felsted-Showroom-Humphrey-Munson-1.jpg");
+    
+    background-size: cover;
+  }
+  
+  
+  
+  .name {
+    color: white;
+    /* background-color: white; */
+    font-size: 90px;
+    text-shadow: -9px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+    /* opacity: 0.4; */
+  }
+  
+  .descrip {
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+    
+  }
+  
+  #rightbut {
+    background-color: #d5d0d0;
+    color: black;
+    
+  }
+    
+  
+  /* CSS */
+  
+  
+  /* body {
+     background-image: url(https://thumbs.dreamstime.com/z/tacos-tile-mexican-food-delicious-taco-texture-154290597.jpg); 
+    background-color: rgb(243, 243, 243);
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://thumbs.dreamstime.com/z/tacos-tile-mexican-food-delicious-taco-texture-154290597.jpg");
+  }  */
+  

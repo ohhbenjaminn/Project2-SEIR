@@ -23,12 +23,47 @@ h2 {
 
 .ingredients, .directions{
     font-size: 20px;
+    text-align: left;
 }
 
 .directions-text, .ingredients-text {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
 }
 
+.recipeToggleDetails {
+    display: none;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    background-color: turquoise;
+    color: white;
+    box-shadow: 0 10px 10px -5px;
+   
+}
+
+.details {
+    text-align: center;
+}
+
+h2 {
+    background-color: #efc6c6;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.comments{
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+.add-comment {
+   text-align: center;
+}
 
 /* div {
     position: relative;

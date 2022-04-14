@@ -1,0 +1,53 @@
+
+.boxed {
+    display: flex;
+    box-shadow: 0 10px 10px -5px;
+    /* margin-left: 50%; */
+    margin-right: 50%;
+    /* justify-content: center; */
+    padding-left: 2rem;
+    width: 70%;
+    font-size: 20px;
+    background-color: #eeeeee;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.itemName {
+    font-size: 60px;
+    font-style: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.prepTime, .cookTime {
+    text-align: center;
+}
+
+.ingredients, .directions {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+
+.ingredients2, .directions2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+
+.pic {
+    height: 45vh;
+    width: 100%;
+}
+body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.add-comment {
+    margin-left: 100%;
+    padding-left: 5rem;
+    display: inline-block;
+}
+
+.postcomments {
+    margin-right: 100vh;
+}

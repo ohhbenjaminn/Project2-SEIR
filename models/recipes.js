@@ -5,46 +5,45 @@ const data = require('./data.json');
 const commentsSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: 'This field is required.'
+        required: true
     },
     date: {
         type: Date,
-        required: 'This field is required.'
+        required: true
     },
     comment: {
         type: String,
-        required: 'This field is required.'
+        required: true
     },
 });
 
 const recipesSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: 'This field is required.'
+        required: true
     },
     ingredients: {
         type: [String],
-        required: 'This field is required.'
+        required: true
     },
     directions: {
         type: [String],
-        required: 'This field is required.'
+        required: true
     },
     prepTime: {
         type: Number,
         min: 1,
         max: 9999,
-        required: 'This field is required.'
+        required: true
     },
     cookTime: {
         type: Number,
         min: 1,
         max: 9999,
-        required: 'This field is required.'
+        required: true
     },
     comments: [commentsSchema],
 
-    id: {type: Number, default: 13}
 });
 
 
