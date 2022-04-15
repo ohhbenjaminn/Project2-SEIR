@@ -22,5 +22,7 @@ router.post('/comment/:id', recipesController.comment);
 router.get('/edit/:id', recipesController.findEdit);
 //post edit recipe
 router.post('/edit/:id', recipesController.edit)
+// delete recipe
+router.delete('/delete/:id', recipesController.delete)
 
 module.exports = router;

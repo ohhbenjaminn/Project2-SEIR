@@ -2,6 +2,7 @@
 <%- include('../navbar') %> 
 <div class="edit-wrapper">
     Edit Recipe
+ 
     <form action="/recipes/edit/<%= recipe.id %>" method="post">
         <div>Name:</div>
         <textarea name="name"><%= recipe.name %> </textarea>
@@ -15,4 +16,7 @@
         <textarea name="directions"><%= recipe.directions %> </textarea>
         <input value="submit changes" type="submit"/>
     </form>
+   
 </div>
+
+
