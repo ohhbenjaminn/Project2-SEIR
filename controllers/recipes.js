@@ -1,36 +1,27 @@
-const { Recipes, User } = require('../models/recipes');
+const { Recipes, User, Comments } = require('../models/recipes');
 
 module.exports = {
-    index,
     new: newRecipe,
     create: createRecipe,
     one,
     all,
     comment: addComment,
     filter: filterRecipes,
-    delete: deleteRecipe,
     edit: editRecipe,
     findEdit,
-    delete: deleteRecipe,
+    delete: deleteComment,
 };
+function deleteComment(req,res){
+    console.log('=====> ', req.params)
 
-
-function index(req, res){
-    res.render('recipes/index')
+    Recipes.findOne({_id: req.params.id}, async function (err, recipe) {
+        if(err) console.log(err)
+        const updatedComments = recipe.comments.filter((r) => r._id != req.params.commentId)
+        recipe.comments = updatedComments;
+        recipe.save()
+        res.redirect(`/recipes/${recipe._id}`)
+    })
 }
-
-
-
-
-function deleteRecipe(req, res){
-    Recipes.findByIdAndDelete({_id: req.params.id}, function(err, recipe){
-        if (err) return res.redirect('/recipes/all');
-        res.redirect('/profile', {
-            recipe
-        });
-    });
-}
-
 //get to edit recipe page
 function findEdit(req, res) {
     Recipes.findById(req.params.id, function(err, recipe) {
@@ -106,13 +97,13 @@ function all(req, res){
 //post comment to specific recipe
 function addComment(req, res) {
     const name = req.user.name;
+    const userID = req.user._id
     const date = new Date();
     Recipes.findById(req.params.id, function(err, recipe){
         if (err) console.log(err)
-        const data = { name, date, ...req.body }
+        const data = { name, userID, date, ...req.body }
         recipe.comments.push(data)
         recipe.save()
         res.redirect(`/recipes/${recipe._id}`)
     })
 }
-

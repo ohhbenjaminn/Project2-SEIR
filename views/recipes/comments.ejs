@@ -1,5 +1,14 @@
 <h1>Add a comment</h1>
+<% console.log(user) %> 
 <form action="/recipes/comment/<%= recipe._id %> " method='POST'>
     <textarea placeholder="Enter Comment Here" name="comment"></textarea>
     <input type="submit" value="submit"/>
 </form>
+<% recipe.comments.map((comment) => { -%>
+    <% console.log(comment) %> 
+    <% if(comment.userID.equals(user._id)) { %> 
+    <form action="/recipes/delete/<%= recipe._id %>/<%= comment._id %> " method='POST'>
+        <button type="submit" value="submit">Delete Comment</button>
+    </form>
+    <% } %> 
+<% }) -%>

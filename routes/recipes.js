@@ -4,25 +4,25 @@ const recipesController = require('../controllers/recipes');
 
 //app routes
 
-//homepage
-router.get('/', recipesController.index); 
+// delete comment
+router.post('/delete/:id/:commentId', recipesController.delete);
 //create recipes
 router.get('/new', recipesController.new);
 //all recipes
 router.get('/all', recipesController.all); 
 //searched recipes
-router.get('/search/:query', recipesController.filter);
+router.get('/search/:query', recipesController.filter)
 //individual recipe
 router.get('/:id', recipesController.one);
-//post
+//post recipe
 router.post('/', recipesController.create);
 //posting comment
 router.post('/comment/:id', recipesController.comment);
 //get find recipe to edit
 router.get('/edit/:id', recipesController.findEdit);
 //post edit recipe
-router.post('/edit/:id', recipesController.edit)
-// delete recipe
-router.delete('/delete/:id', recipesController.delete)
+router.post('/edit/:id', recipesController.edit);
+
+
 
 module.exports = router;

@@ -18,6 +18,14 @@
 
         <h1 class="itemName"><%= recipe.name %></h1>
         <div>
+            
+        <h5 class="prepTime">Cook Time  <%= recipe.cookTime %></h5>
+        
+        <h5  class="cookTime">Prep Time: <%= recipe.prepTime %> </h5>
+           
+            <br>
+
+
             <h3 class="ingredients">Ingredients</h3>
             <ul>
                 <% recipe.ingredients.map((i) => { %>
@@ -37,19 +45,16 @@
             <% }) %> 
         </div>
 
-        <div class="boxed">
-            <h5 class="prepTime">Cook Time  <%= recipe.cookTime %></h5>
         
-            <h5  class="cookTime">Prep Time: <%= recipe.prepTime %> </h5>
-        </div>
-
+        <br>
+        
+        
         <div>
             <h5>Comments</h5>
             <% recipe.comments.map((comment) => { %>
                 <div class="commenter-name"><%= comment.name %></div>
                 <div><%= comment.comment %></div>
             <% }) %>
-        </div>
 
         <% if(user) { %> 
             <%- include('./comments') %> 

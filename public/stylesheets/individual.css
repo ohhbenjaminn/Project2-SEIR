@@ -5,11 +5,12 @@
     /* margin-left: 50%; */
     margin-right: 50%;
     /* justify-content: center; */
-    padding-left: 2rem;
-    width: 70%;
+    padding-left: 30rem;
+    width: 20%;
     font-size: 20px;
     background-color: #eeeeee;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* text-align: center; */
 }
 
 .itemName {
