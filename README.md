@@ -24,7 +24,9 @@ Forgot your mothers favorite reciepe, no worries here. This is a database that w
 
 - Stores receipes for users, a collection or closet you can say.
 - Searchable receipes on the go.
-- Leave comments/ratings on recipe's you've tried.
+- Ability to create and save recipes.
+- Be able to edit and delete posts.
+- Leave comments on recipe's you've tried.
 
 
 ## Let's take a look!
