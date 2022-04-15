@@ -10,6 +10,11 @@
 ## ERD:
 ![Project 2 ERD](https://user-images.githubusercontent.com/43531474/162398619-6523d6db-cad2-4bda-a7cd-6158ae631273.jpeg)
 
+## ScreenShots:
+<img width="1255" alt="Screen Shot 2022-04-15 at 7 37 16 AM" src="https://user-images.githubusercontent.com/43531474/163584615-fc30262c-c5f9-44e2-bec9-4335d9af3941.png">
+
+<img width="1259" alt="Screen Shot 2022-04-15 at 7 37 29 AM" src="https://user-images.githubusercontent.com/43531474/163584730-71d9131d-1ec3-4a4f-adfa-97911f4d806f.png">
+
 
 ## Trello:
 https://trello.com/b/hNiZRiYt/project-2
