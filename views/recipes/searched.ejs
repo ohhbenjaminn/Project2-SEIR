@@ -1,0 +1,9 @@
+<%- include('../navbar')  %> 
+<div>
+    Similar Recipes:
+    <% recipes.map((recipe) => { %> 
+        <div>
+            <a href="/recipes/<%= recipe._id %>" ><%= recipe.name %> </a>
+        </div>
+    <% }) %> 
+</div>

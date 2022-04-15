@@ -14,6 +14,7 @@
   font-family: 'Courier New', Courier, monospace;
   background-color: beige;
   text-shadow: 1px 1px black;
+  top: 1.25em;
 }
   
   
@@ -26,25 +27,32 @@
 }
 
 .container1 {
-  width: 700px;
+  width: 900px;
   border: 13px solid black;
   padding: 50px;
   margin: auto;
   align-items: center;
-  background-color: #efebeb;
+  background-color: white;
+  padding: 200px;
+
 }
 
-.text-box1 {
-  width: 500px;
+/* .text-box1 {
+  width: 700px;
   border: 3px solid black;
-  padding: 40px;
+  padding: 100px;
   margin: auto;
   align-items: center;
   font-size: 50px;
   text-align: center;
   background-color: white;
+} */
+.recipelist{
+  text-align: left;
+  font-size: 20px;
+  padding-bottom: 20px;
+  
 }
-
 .container2 {
   width: 700px;
   border: 13px solid black;
@@ -63,4 +71,8 @@
   font-size: 50px;
   text-align: center;
   background-color: white;
+}
+
+body {
+  padding-bottom: 30px;
 }

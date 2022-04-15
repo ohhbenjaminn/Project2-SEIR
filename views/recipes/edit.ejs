@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/stylesheets/edit.css">
+<%- include('../navbar') %> 
+<div class="edit-wrapper">
+    Edit Recipe
+    <form action="/recipes/edit/<%= recipe.id %>" method="post">
+        <div>Name:</div>
+        <textarea name="name"><%= recipe.name %> </textarea>
+        <div>Prep Time:</div>
+        <textarea name="prepTime"><%= recipe.prepTime %> </textarea>
+        <div>Cook Time:</div>
+        <textarea name="cookTime"><%= recipe.cookTime %> </textarea>
+        <div>Ingredients:</div>
+        <textarea name="ingredients"><%= recipe.ingredients %> </textarea>
+        <div>Directions:</div>
+        <textarea name="directions"><%= recipe.directions %> </textarea>
+        <input value="submit changes" type="submit"/>
+    </form>
+</div>

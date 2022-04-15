@@ -5,7 +5,7 @@
     margin-right: auto;
     /* justify-content: center; */
     padding-left: 2rem;
-    width: 50%;
+    width: 60%;
     font-size: 20px;
     background-color: #f3f0f0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -16,12 +16,11 @@
     opacity: 0.9;
 }
 
-/* h2 {
-    font-size: 100px;
-    text-align: center;
-    
+.add {
+    font-size: 25px;
 
-} */
+}
+
 #directions, #ingredients {
     width: 400px;
     height: 200px;

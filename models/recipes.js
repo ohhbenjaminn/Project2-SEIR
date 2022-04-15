@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const data = require('./data.json');
 
-// Create your User Model
 const commentsSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -43,11 +42,24 @@ const recipesSchema = new mongoose.Schema({
         required: true
     },
     comments: [commentsSchema],
+});
 
+// Create your User Model
+const userSchema = new mongoose.Schema({
+    name: String,
+    googleId: {
+      type: String,
+      required: true
+    },
+    email: String,
+    avatar: String,
+    likedRecipes: [Number],
+    originalRecipes: [ recipesSchema ],
 });
 
 
 const Recipes = mongoose.model('recipes', recipesSchema);
+const User = mongoose.model('User', userSchema);
 
 const seed = () => {
     Recipes.insertMany(data)
@@ -58,4 +70,8 @@ const seed = () => {
 
 // seed() 
 
-module.exports = Recipes;
+module.exports = {
+    Recipes, 
+    User
+}
+  

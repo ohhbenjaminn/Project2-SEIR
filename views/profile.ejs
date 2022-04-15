@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./navbar')  %> 
+    <% if(user){%>
+            <h1>Hello, <%= user.name %> </h1>
+
+
+    <br>
+    <div id="bannerimage"></div>
+    <br>
+
+    <div class="container1">        
+        <h2 class="original">Original Recipes</h2>
+        <br>
+     <div class="recipelist">
+            <% user.originalRecipes.map((recipe) => { %> 
+                <div >
+                    <a href="/recipes/<%= recipe._id%> "><%= recipe.name %></a>
+                    <span>
+                        <a href="/recipes/edit/<%= recipe._id %> " id="edit-button">Edit</a>
+                        <form method="delete" action="/recipes/delete/<%= recipe._id %>">
+                            <input id="delete-button" type="submit" value="delete" name="<%= recipe._id %> ">
+                        </form>
+                    </span>
+                </div>
+            <% }) %> 
+        <% } %>  
+    </div>    
+    <div class="text-box1">
+    </div>    
+       
+    
+    <!-- </div>
+    <br><br><br>
+    <div class="container2">
+         <h3 class="second">Favorite Recipes</h3>
+         <br> 
+         <p class="text-box2"> </p>
+    </div> -->
+
+       
+
+</body>
+</html>

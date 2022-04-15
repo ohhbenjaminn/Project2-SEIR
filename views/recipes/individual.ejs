@@ -9,67 +9,54 @@
 </head>
 <body>
     <br>
-    <%- include('../navbar') %> 
-    <br>
-    <img class="pic" src="https://i.pinimg.com/originals/51/ee/ab/51eeab1898363e943dfb31e525d9ffc7.png"  alt="restaurant">
-<!-- width="1280" height="600" -->
-    <div>
-        <% recipe.map(function(item){  %>
-            
-            <div class="itemName"><b><%= item.name %> </b></div>
-            <br>
+ <%- include("../navbar") %> 
+ <br>
+ <img class="pic" src="https://i.pinimg.com/originals/51/ee/ab/51eeab1898363e943dfb31e525d9ffc7.png"  alt="restaurant">
 
-            <div class="boxed">
-                <div class="prepTime"><b>Prep Time:</b> <%= item.prepTime %> <div>
-                
-                <div class="cookTime"><b>Cook Time:</b> <%= item.cookTime %> <div>
-            </div>
+    <div class="individual-recipe-wrapper">
+        <% if (recipe) { %> 
 
-            
-            <br>
-            <h3 class="ingredients"><b>Ingredients:</b></h3>
-            <div class="ingredients2"><%= item.ingredients %> </div>
-            <br>
-            <h3 class="directions"><b>Directions:</b></h3>
-            <div class="directions2"><%= item.directions %> </div>
+        <h1 class="itemName"><%= recipe.name %></h1>
+        <div>
+            <h3 class="ingredients">Ingredients</h3>
+            <ul>
+                <% recipe.ingredients.map((i) => { %>
+                    <li>
+                        <%= i  %> 
+                    </li>
+                <% }) %> 
+            </ul>
+        </div>
 
-            
-            <% if (user) { %>
-             <form action="/recipes/<%= item._id%>" method="post" class="add-comment">
+        <div>
+            <h3 class="directions">Directions:</h3>
+            <% recipe.directions.map((i) => { %>
+                <li>
+                    <%= i  %> 
+                </li>
+            <% }) %> 
+        </div>
 
-                <div>
-                    <label>Rating:</label>
-                    <select name="rating" >
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <textarea name="comment" id="comment" placeholder="Enter comment"></textarea>
-                </div>
+        <div class="boxed">
+            <h5 class="prepTime">Cook Time  <%= recipe.cookTime %></h5>
+        
+            <h5  class="cookTime">Prep Time: <%= recipe.prepTime %> </h5>
+        </div>
 
-                <input type="submit" value="Submit">
-                
-            </form>
-            <br><br>
-            <% } %>
-        <% }) %>                    
+        <div>
+            <h5>Comments</h5>
+            <% recipe.comments.map((comment) => { %>
+                <div class="commenter-name"><%= comment.name %></div>
+                <div><%= comment.comment %></div>
+            <% }) %>
+        </div>
+
+        <% if(user) { %> 
+            <%- include('./comments') %> 
+        <% } else { %> 
+            <div>Sign In to add a comment!</div>
+        <% } %> 
+        <% } %> 
     </div>
-
-<div>
-     <% recipe.map(function(item){ %>  
-        <div class="'postcomments">
-            <% item.comments.map((i) => {%>
-                <div><%= i.name %> </div>
-                <%= i.date %> 
-                <div><%= i.comment %> </div>
-                
-            <%  }) %>
-        </div>      
-    
-    <% }) %> 
-</div>    
-
 </body>
 </html>

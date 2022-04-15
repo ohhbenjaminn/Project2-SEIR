@@ -8,14 +8,19 @@ const recipesController = require('../controllers/recipes');
 router.get('/', recipesController.index); 
 //create recipes
 router.get('/new', recipesController.new);
-router.post('/', recipesController.create);
 //all recipes
 router.get('/all', recipesController.all); 
-//your recipes
-router.get('/profile', recipesController.profile);
-//unique ID
+//searched recipes
+router.get('/search/:query', recipesController.filter);
+//individual recipe
 router.get('/:id', recipesController.one);
-router.post('/:id', recipesController.two);
-
+//post
+router.post('/', recipesController.create);
+//posting comment
+router.post('/comment/:id', recipesController.comment);
+//get find recipe to edit
+router.get('/edit/:id', recipesController.findEdit);
+//post edit recipe
+router.post('/edit/:id', recipesController.edit)
 
 module.exports = router;
